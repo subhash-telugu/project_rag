@@ -22,7 +22,7 @@ class LocalLLM(LLM):
     def __init__(self,model_path):
         super().__init__(model_path=model_path)
         
-        #self.model_path=model_path
+        self.model_path=model_path
         self.load_model()
         
     def load_model(self):
