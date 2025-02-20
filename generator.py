@@ -27,7 +27,7 @@ class LocalLLM(LLM):
         
     def load_model(self):
         quantization_config = BitsAndBytesConfig(load_in_8bit=True)
-        access_token = "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"
+        access_token = "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"
         self._llm_model = AutoModelForCausalLM.from_pretrained(              
                                                           self.model_path, 
                                                           torch_dtype=torch.float16, 
