@@ -46,7 +46,7 @@ UPLOAD_FOLDER=os.path.join(os.getcwd(),"uploads")
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
-model_path = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+model_path = "unsloth/Meta-Llama-3.1-8B-Instruct"
 embedding_model_path = "sentence-transformers/all-mpnet-base-v2"
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
